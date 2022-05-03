@@ -30,7 +30,7 @@ def main():
     jumpTable['3'] = stub                 # Appiah - call to function goes here
     jumpTable['4'] = stub                 # Balderas - call to function goes here
     jumpTable['5'] = stub                 # Butler - call to function goes here
-    jumpTable['6'] = stub                 # Kennedy - call to function goes here
+    jumpTable['6'] = kennedyFunction      # Kennedy - call to function goes here
     jumpTable['7'] = stub                 # Long - call to function goes here
     jumpTable['8'] = stub                 # Nguyen - call to function goes here
     jumpTable['9'] = stub                 # Overby - call to function goes here
@@ -158,9 +158,38 @@ def smileyFib(numberOfTimes):
     print()
     print()
 
+# *****************************************************************************************
+# FUNCTION:         kennedyFunction
+# DESCRIPTION:      a range based for loop iterates over the first 10 integers (0-9),
+#                   each iteration passes the iterator to the Factorial function call that
+#                   uses recursion to compute the factorial of the corresponding integer
+# OUTPUT EXAMPLE:   range is set to 10
+#                   Program prints the factorials of 0! through 9!
+# *****************************************************************************************
+def kennedyFunction():
+    
+    print("\nThe factorials of the first 10 non-negative integers:\n")
+
+    for i in range(10):
+       print(str(i) + "! =", Factorial(i)) 
+       
+    print("\nPress ENTER to continue.")
+    input()   
+           
+def Factorial(n):
+   """Factorial(int): 
+       Computes the factorial of a non-negative integer using recursion"""
+
+   if n == 0 or n == 1:  
+       return 1  
+   else:  
+       return n * Factorial(n - 1)
+    
 #*****************************************************************
 # Please leave me alone,
 #   Sincerely,
 #       main()
 #*****************************************************************
+
+
 main()
