@@ -161,7 +161,7 @@ def smileyFib(numberOfTimes):
 # *****************************************************************************************
 # FUNCTION:         kennedyFunction
 # DESCRIPTION:      a range based for loop iterates over the first 10 integers (0-9),
-#                   each iteration passes the iterator to the kFactorial function call that
+#                   each iteration passes the iterator to the kennedyFactorial function call that
 #                   uses recursion to compute the factorial of the corresponding integer
 # OUTPUT EXAMPLE:   range is set to 10
 #                   Program prints the factorials of 0! through 9!
