@@ -171,19 +171,19 @@ def kennedyFunction():
     print("\nThe factorials of the first 10 non-negative integers:\n")
 
     for i in range(10):
-       print(str(i) + "! =", kFactorial(i)) 
+       print(str(i) + "! =", kennedyFact(i)) 
        
     print("\nPress ENTER to continue.")
     input()   
            
-def kFactorial(n):
-   """kFactorial(int): 
+def kennedyFact(n):
+   """kennedyFact(int): 
        Computes the factorial of a non-negative integer using recursion"""
 
    if n == 0 or n == 1:  
        return 1  
    else:  
-       return n * kFactorial(n - 1)
+       return n * kennedyFact(n - 1)
     
 #*****************************************************************
 # Please leave me alone,
