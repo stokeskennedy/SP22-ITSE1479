@@ -161,7 +161,7 @@ def smileyFib(numberOfTimes):
 # *****************************************************************************************
 # FUNCTION:         kennedyFunction
 # DESCRIPTION:      a range based for loop iterates over the first 10 integers (0-9),
-#                   each iteration passes the iterator to the Factorial function call that
+#                   each iteration passes the iterator to the kFactorial function call that
 #                   uses recursion to compute the factorial of the corresponding integer
 # OUTPUT EXAMPLE:   range is set to 10
 #                   Program prints the factorials of 0! through 9!
@@ -171,19 +171,19 @@ def kennedyFunction():
     print("\nThe factorials of the first 10 non-negative integers:\n")
 
     for i in range(10):
-       print(str(i) + "! =", Factorial(i)) 
+       print(str(i) + "! =", kFactorial(i)) 
        
     print("\nPress ENTER to continue.")
     input()   
            
-def Factorial(n):
-   """Factorial(int): 
+def kFactorial(n):
+   """kFactorial(int): 
        Computes the factorial of a non-negative integer using recursion"""
 
    if n == 0 or n == 1:  
        return 1  
    else:  
-       return n * Factorial(n - 1)
+       return n * kFactorial(n - 1)
     
 #*****************************************************************
 # Please leave me alone,
