@@ -97,12 +97,31 @@ def showMenu():
     print()
 
 # *****************************************************************************************
-# Function Definitions Section
+# FUNCTION:         kennedyFunction
+# DESCRIPTION:      a range based for loop iterates over the first 10 integers (0-9),
+#                   each iteration passes the iterator to the kennedyFactorial function call
+#                   that uses recursion to compute the factorial of the corresponding integer
+# OUTPUT EXAMPLE:   range is set to 10
+#                   Program prints the factorials of 0! through 9!
 # *****************************************************************************************
-# Add your function below.  
-#  
-# FunctionName:  lastnameFunction(your parameters)
-# *****************************************************************************************
+def kennedyFunction():
+    
+    print("\nThe factorials of the first 10 non-negative integers:\n")
+
+    for i in range(10):
+       print(str(i) + "! =", kennedyFact(i)) 
+       
+    print("\nPress ENTER to continue.")
+    input()   
+           
+def kennedyFact(n):
+   """kennedyFact(int): 
+       Computes the factorial of a non-negative integer using recursion"""
+
+   if n == 0 or n == 1:  
+       return 1  
+   else:  
+       return n * kennedyFact(n - 1)
 
 # *****************************************************************************************
 # FUNCTION:         stub (default for menu)
@@ -157,33 +176,6 @@ def smileyFib(numberOfTimes):
 
     print()
     print()
-
-# *****************************************************************************************
-# FUNCTION:         kennedyFunction
-# DESCRIPTION:      a range based for loop iterates over the first 10 integers (0-9),
-#                   each iteration passes the iterator to the kennedyFactorial function call
-#                   that uses recursion to compute the factorial of the corresponding integer
-# OUTPUT EXAMPLE:   range is set to 10
-#                   Program prints the factorials of 0! through 9!
-# *****************************************************************************************
-def kennedyFunction():
-    
-    print("\nThe factorials of the first 10 non-negative integers:\n")
-
-    for i in range(10):
-       print(str(i) + "! =", kennedyFact(i)) 
-       
-    print("\nPress ENTER to continue.")
-    input()   
-           
-def kennedyFact(n):
-   """kennedyFact(int): 
-       Computes the factorial of a non-negative integer using recursion"""
-
-   if n == 0 or n == 1:  
-       return 1  
-   else:  
-       return n * kennedyFact(n - 1)
     
 #*****************************************************************
 # Please leave me alone,
