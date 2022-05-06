@@ -105,7 +105,7 @@ def showMenu():
 #                   Program prints the factorials of 0! through 9!
 # *****************************************************************************************
 def kennedyFunction():
-    
+    # testing SSH key
     print("\nThe factorials of the first 10 non-negative integers:\n")
 
     for i in range(10):
